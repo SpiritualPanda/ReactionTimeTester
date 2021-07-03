@@ -40,6 +40,7 @@
             </constraints>
             <properties>
               <text value="15 Seconds"/>
+              <toolTipText value="16"/>
             </properties>
           </component>
           <component id="42769" class="javax.swing.JButton" binding="a60SecondsButton" default-binding="true">
@@ -48,6 +49,7 @@
             </constraints>
             <properties>
               <text value="60 Seconds"/>
+              <toolTipText value="61"/>
             </properties>
           </component>
           <component id="4477b" class="javax.swing.JButton" binding="a30SecondsButton" default-binding="true">
@@ -56,6 +58,7 @@
             </constraints>
             <properties>
               <text value="30 Seconds"/>
+              <toolTipText value="31"/>
             </properties>
           </component>
           <component id="bcecb" class="javax.swing.JButton" binding="a45SecondsButton" default-binding="true">
@@ -64,6 +67,7 @@
             </constraints>
             <properties>
               <text value="45 Seconds"/>
+              <toolTipText value="46"/>
             </properties>
           </component>
         </children>

@@ -116,8 +116,9 @@ public class ReactionTimeRunner extends JFrame {
 
     public static void main(String[] args) {
         menu = new MainMenu("Main Menu");
-        menu.setSize(1200, 1000);
+        menu.setSize(900, 700);
         menu.setVisible(true);
+        menu.setLocationRelativeTo(null);
     }
 
 }

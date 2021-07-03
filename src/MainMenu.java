@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 
 public class MainMenu extends JFrame {
     private JButton a15SecondsButton;
@@ -21,28 +22,19 @@ public class MainMenu extends JFrame {
         this.setContentPane(panelMain);
         increaseFontSize(welcomeLbl, 25.0F);
 
-        a15SecondsButton.addActionListener(e -> {
-            ReactionTimeRunner frame = new ReactionTimeRunner("Reaction Time Tester", 16);
-            frame.setSize(1200, 1000);
-            frame.setVisible(true);
-        });
+        ArrayList<JButton> buttons = new ArrayList<>();
+        buttons.add(a15SecondsButton);
+        buttons.add(a30SecondsButton);
+        buttons.add(a45SecondsButton);
+        buttons.add(a60SecondsButton);
 
-        a30SecondsButton.addActionListener(e -> {
-            ReactionTimeRunner frame = new ReactionTimeRunner("Reaction Time Tester", 31);
-            frame.setSize(1200, 1000);
-            frame.setVisible(true);
-        });
-
-        a45SecondsButton.addActionListener(e -> {
-            ReactionTimeRunner frame = new ReactionTimeRunner("Reaction Time Tester", 46);
-            frame.setSize(1200, 1000);
-            frame.setVisible(true);
-        });
-
-        a60SecondsButton.addActionListener(e -> {
-            ReactionTimeRunner frame = new ReactionTimeRunner("Reaction Time Tester", 61);
-            frame.setSize(1200, 1000);
-            frame.setVisible(true);
-        });
+        for (JButton butt : buttons) {
+            butt.addActionListener(e -> {
+                ReactionTimeRunner frame = new ReactionTimeRunner("ReactionTimeTester", Integer.parseInt(butt.getToolTipText()));
+                frame.setSize(900, 700);
+                frame.setVisible(true);
+                frame.setLocationRelativeTo(null);
+            });
+        }
     }
 }
