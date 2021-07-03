@@ -48,7 +48,7 @@ public class ReactionTimeRunner extends JFrame {
     private JButton a9Button;
     private JButton a10Button;
     private JLabel scoreLabel;
-    private JLabel sclbl;
+    private JLabel scoreTitle;
     private JLabel timerLabel;
     // Instance variables
     private int score;
@@ -60,7 +60,7 @@ public class ReactionTimeRunner extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setContentPane(panelMain);
         increaseFontSize(titleLabel, 20.0F);
-        increaseFontSize(sclbl, 25.0F);
+        increaseFontSize(scoreTitle, 25.0F);
         increaseFontSize(scoreLabel, 25.0F);
         increaseFontSize(timerLabel, 25.0F);
         timeSelection = time;
