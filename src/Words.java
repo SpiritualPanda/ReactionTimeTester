@@ -21,7 +21,7 @@ public class Words {
         wordList = new ArrayList<>();
 
         try {
-            File file = new File("C:\\Users\\James\\ReactionTime\\src\\resources\\engmix");
+            File file = new File("C:\\Users\\James\\IdeaProjects\\ReactionTime\\src\\resources\\engmix");
             Scanner sc = new Scanner(file);
             while (sc.hasNextLine()) {
                 String word = sc.nextLine();
